@@ -22,8 +22,6 @@ int GCD(int a, int b) {
 
 			cout << a << " = " << b << " * " << (a/b) << " + " << (a-(b*(a/b))) << endl;
 
-			//cout << "A % B: " << (a % b) << endl;
-
 			temp = a-(b*(a/b));
 			a = b; b = temp;
 		}
