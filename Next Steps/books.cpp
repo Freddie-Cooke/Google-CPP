@@ -88,6 +88,6 @@ int main() {
 	cout << "Profit: " << profit << endl; 
 
 	system("pause");
-
+	
 	return 0;
 }
