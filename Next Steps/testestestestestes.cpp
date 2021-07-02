@@ -1,17 +1,19 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-void add_twenty(double &my_double) {
-	my_double += 20;
-}
-
 int main() {
 
-	double my_double;
+	const int kMaxInputSize = 20;
 
-	cout << "Please enter a double: "; cin >> my_double;
-	add_twenty(my_double);
-	cout << "Double: " << my_double;
+	string a_string;
+	string another_string;
 
+	cout << "Enter something: "; getline(cin, a_string);
+	cout << "Enter something else: "; cin >> another_string;
+	cout << a_string << endl;
+	cout << another_string << endl;
+
+	return 0;
 }

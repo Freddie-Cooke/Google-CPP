@@ -60,13 +60,20 @@ Composer::~Composer() {
 
 void Composer::Promote(int increment) {
 	this->set_ranking(this->ranking() + increment);
+	cout << "Promoted " << first_name_ << " " << last_name_ << ". Rank: " << ranking_ << "(+" << increment << ")" << endl; 
+	cout << endl;
 }
 
 void Composer::Demote(int increment) {
 	this->set_ranking(this->ranking() - increment);
+	cout << "Demoted " << first_name_ << " " << last_name_ << ". Rank: " << ranking_ << "(-" << increment << ")" << endl; 
+	cout << endl;
 }
 
 void Composer::Display() {
+	cout << "Name: " << first_name_ << " " << last_name_ << endl;
+	cout << "Genre: " << composer_genre_ << endl;
+	cout << "Year of birth: " << composer_yob_ << endl;
+	cout << "Fact: " << first_name_ << endl;
 	cout << endl;
-	cout << "Composer: " << this->first_name() << " " << this->last_name() << endl;
 }
